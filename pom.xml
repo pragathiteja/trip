@@ -9,11 +9,13 @@
   <url>http://maven.apache.org</url>
 
       <dependencies>
+        <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin</artifactId>
         <version>4.0.0</version>
-      </plugin>
+          </plugin>
+          </plugins>
       </dependencies>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
