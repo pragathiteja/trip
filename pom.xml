@@ -7,35 +7,30 @@
   <version>1.0-SNAPSHOT</version>
   <name>trip Maven Webapp</name>
   <url>http://maven.apache.org</url>
-<dependencies>
+
+      <dependencies>
       <plugin>
         <groupId>trip</groupId>
         <artifactId>maven-plugin</artifactId>
         <version>4.0.0</version>
       </plugin>
       </dependencies>
-  <dependencies>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>4.0.0</version>
-        <configuration>
-          <linkXref>true</linkXref>
-          <sourceEncoding>utf-8</sourceEncoding>
-          <minimumTokens>100</minimumTokens>
           <targetJdk>1.8</targetJdk>
-        </configuration>
       </plugin>
-    </dependencies>
         <properties>
            <maven.compiler.target>1.8</maven.compiler.target>
          <maven.compiler.source>1.8</maven.compiler.source>
         </properties>
-      <build>
+      
+    <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
                 <version>4.0.0</version>
                 <configuration>
                     <source>1.8</source>
