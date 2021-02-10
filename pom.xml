@@ -10,7 +10,7 @@
 
       <dependencies>
       <plugin>
-        <groupId>trip</groupId>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin</artifactId>
         <version>4.0.0</version>
       </plugin>
