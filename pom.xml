@@ -15,6 +15,7 @@
         <version>4.0.0</version>
       </plugin>
       </dependencies>
+  <dependencies>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -26,6 +27,7 @@
           <targetJdk>1.8</targetJdk>
         </configuration>
       </plugin>
+    </dependencies>
         <properties>
            <maven.compiler.target>1.8</maven.compiler.target>
          <maven.compiler.source>1.8</maven.compiler.source>
