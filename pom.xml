@@ -13,9 +13,6 @@
         <groupId>trip</groupId>
         <artifactId>maven-plugin</artifactId>
         <version>3.6.1</version>
-        <configuration>
-          <formats>xml</format>
-        </configuration>
       </plugin>
       </dependencies>
       <plugin>
@@ -46,8 +43,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-                </configuration>
-            </plugin>
-        </plugins>
+            </plugins>
   </build>
 </project>
