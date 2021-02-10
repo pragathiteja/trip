@@ -1,61 +1,49 @@
 <project xmlns="http://maven.apache.org/POM/3.6.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/3.6.3 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>3.6.3</modelVersion>
-  <groupId>com.geekcap.vmturbo</groupId>
-  <artifactId>hello-world-servlet-example</artifactId>
+  <groupId>org.apache.maven</groupId>
+  <artifactId>trip-webapp</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>hello-world-servlet-example Maven Webapp</name>
+  <name>trip Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
-<reporting>
-    <plugins>
+      <dependencies>
       <plugin>
         <groupId>trip</groupId>
         <artifactId>maven-plugin</artifactId>
-        <version>2.7</version>
+        <version>3.6.1</version>
         <configuration>
-          <formats>
-            <format>xml</format>
-          </formats>
+          <formats>xml</format>
         </configuration>
       </plugin>
+      </dependencies>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>2.17</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.6</version>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.6.1</version>
         <configuration>
           <linkXref>true</linkXref>
           <sourceEncoding>utf-8</sourceEncoding>
           <minimumTokens>100</minimumTokens>
-          <targetJdk>1.6</targetJdk>
-        
+          <targetJdk>1.8</targetJdk>
         </configuration>
       </plugin>
+        <properties>
+           <maven.compiler.target>1.8</maven.compiler.target>
+         <maven.compiler.source>1.8</maven.compiler.source>
+        </properties>
       
-  <dependencies>
-      <dependency>
-          <groupId>javax.servlet</groupId>
-          <artifactId>servlet-api</artifactId>
-          <version>2.5</version>
-          <scope>provided</scope>
-      </dependency>
-  </dependencies>
     <build>
         <finalName>trip</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.0.2</version>
+                <version>3.6.1</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
                 </configuration>
